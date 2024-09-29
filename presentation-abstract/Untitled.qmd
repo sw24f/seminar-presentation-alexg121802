@@ -1,0 +1,13 @@
+---
+title: "presentation-on-dankel-paper-alexg121802"
+format: pptx
+editor: source
+---
+
+## Quarto
+
+## Bullets
+
+
+## Code
+
