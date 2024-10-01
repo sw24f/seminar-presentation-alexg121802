@@ -1,16 +1,28 @@
+
 ---
 title: "Effect sizes for paired data should use the change score variability rather than the pre-test variability."
 author: "Alex Gould"
 date: "`r Sys.Date()`"
 bibliography: pres.bib
+output: 
+  beamer_presentation:
+    keep_tex: true  # Optional: if you want to keep the .tex file
+    pandoc_args: [
+      "--variable", "aspectratio=169"  # Set aspect ratio directly
+    ]
 cite-method: natbib
-output: beamer_presentation
 header-includes:
-  - \usepackage{natbib, url}
-  - \usepackage{enumerate, amsmath, amssymb, amsthm}
+  - \usepackage{natbib}
+  - \usepackage{amsmath}
   - \usepackage{graphicx}
+  - \usepackage{booktabs}
+  - \usepackage{setspace}
+  - \usepackage{float}
   - \usepackage{hyperref}
+  - \setbeamersize{text margin left=1in, text margin right=1in}
 ---
+
+
 ## Abstract
   - Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change score variability rather than the pre-test variability. J Strength Cond Res 35(6): 1773–1778, 2021—
   % What is effect size 
@@ -22,6 +34,7 @@ header-includes:
 % Which Journal was this published in 
 % Good example of the use of statistics as an interdisciplinary tool 
 
+\citet{dankeleffect} explains this
 ## Introduction
 
 - The field of exercise
