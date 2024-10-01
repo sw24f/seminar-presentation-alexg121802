@@ -1,31 +1,27 @@
 ---
-title: "Dankel, S. J., & Loenneke, J. P. (2021). Effect sizes for paired data should use the change score variability rather than the pre-test variability. The Journal of Strength & Conditioning Research, 35(6), 1773-1778"
+title: "Effect sizes for paired data should use the change score variability rather than the pre-test variability."
 author: "Alex Gould"
 date: "`r Sys.Date()`"
+bibliography: pres.bib
+cite-method: natbib
 output: beamer_presentation
+header-includes:
+  - \usepackage{natbib, url}
+  - \usepackage{enumerate, amsmath, amssymb, amsthm}
+  - \usepackage{graphicx}
+  - \usepackage{hyperref}
 ---
+## Abstract
+  - Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change score variability rather than the pre-test variability. J Strength Cond Res 35(6): 1773–1778, 2021—
+  % What is effect size 
+  % What is variability of the study vs. intervention variability
+  % Two claims by authors separated by bullet point 
 
-## Overview
+## Authors 
+% Do research on the authors and what they have accomplished
+% Which Journal was this published in 
+% Good example of the use of statistics as an interdisciplinary tool 
 
+## Introduction
 
-## Aims of the paper
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Dankel et al. figures
-
-
-## Dankel et. al calculations
-
-## What went wrong 
-
-## My analysis
-
-## What changed 
-
-
-
-
-
+- The field of exercise
