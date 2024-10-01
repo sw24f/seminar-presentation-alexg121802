@@ -6,7 +6,7 @@ date: "`r Sys.Date()`"
 bibliography: pres.bib
 output: 
   beamer_presentation:
-    keep_tex: true  # Optional: if you want to keep the .tex file
+    keep_tex: true  
     pandoc_args: [
       "--variable", "aspectratio=169"  # Set aspect ratio directly
     ]
@@ -25,16 +25,35 @@ header-includes:
 
 ## Abstract
   - Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change score variability rather than the pre-test variability. J Strength Cond Res 35(6): 1773–1778, 2021—
-  % What is effect size 
-  % What is variability of the study vs. intervention variability
-  % Two claims by authors separated by bullet point 
+
+### What is effect size 
+  - Blah Blah Blah (source in parentheses)
+  - how is it different from T test statistic
+  - where r they used? (meta analyses specifically for sports and exercise science)
+
+## Main Issue 
+In effect size calculations, people tend to use the wrong kind of variability in their calculations. What are the two different types? 
+
+### Variability of the Study Sample
+Represented by the Blah Blah. Dankel and his team claim that ...
+
+### Variability of the Intervention
+Represented by the Blah Blah. Dankel and his team claim that ....
 
 ## Authors 
-% Do research on the authors and what they have accomplished
-% Which Journal was this published in 
-% Good example of the use of statistics as an interdisciplinary tool 
+- Do research on the authors and what they have accomplished
+- Which Journal was this published in 
+- Good example of the use of statistics as an interdisciplinary tool 
 
-\citet{dankeleffect} explains this
+
 ## Introduction
 
-- The field of exercise
+- Meta-analyses usually use 3 effect size measures: 
+  - Cohen's d 
+  - Hedge's g 
+  - Glass delta
+  - Cite all of these next to the bullet points 
+
+
+## References 
+

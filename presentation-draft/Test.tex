@@ -4,7 +4,6 @@
 %
 \documentclass[
   ignorenonframetext,
-  aspectratio=169,
 ]{beamer}
 \usepackage{pgfpages}
 \setbeamertemplate{caption}[numbered]
@@ -82,13 +81,6 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{natbib}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{setspace}
-\usepackage{float}
-\usepackage{hyperref}
-\setbeamersize{text margin left=1in, text margin right=1in}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -96,96 +88,26 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Effect sizes for paired data should use the change score variability rather than the pre-test variability.},
-  pdfauthor={Alex Gould},
+  pdftitle={Test Document},
+  pdfauthor={Your Name},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Effect sizes for paired data should use the change score
-variability rather than the pre-test variability.}
-\author{Alex Gould}
+\title{Test Document}
+\author{Your Name}
 \date{2024-10-01}
 
 \begin{document}
 \frame{\titlepage}
 
-\begin{frame}{Abstract}
-\protect\hypertarget{abstract}{}
-\begin{itemize}
-\tightlist
-\item
-  Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use
-  the change score variability rather than the pre-test variability. J
-  Strength Cond Res 35(6): 1773--1778, 2021---
-\end{itemize}
-
-\begin{block}{What is effect size}
-\protect\hypertarget{what-is-effect-size}{}
-\begin{itemize}
-\tightlist
-\item
-  Blah Blah Blah (source in parentheses)
-\item
-  how is it different from T test statistic
-\item
-  where r they used? (meta analyses specifically for sports and exercise
-  science)
-\end{itemize}
-\end{block}
-\end{frame}
-
-\begin{frame}{Main Issue}
-\protect\hypertarget{main-issue}{}
-In effect size calculations, people tend to use the wrong kind of
-variability in their calculations. What are the two different types?
-
-\begin{block}{Variability of the Study Sample}
-\protect\hypertarget{variability-of-the-study-sample}{}
-Represented by the Blah Blah. Dankel and his team claim that \ldots{}
-\end{block}
-
-\begin{block}{Variability of the Intervention}
-\protect\hypertarget{variability-of-the-intervention}{}
-Represented by the Blah Blah. Dankel and his team claim that \ldots.
-\end{block}
-\end{frame}
-
-\begin{frame}{Authors}
-\protect\hypertarget{authors}{}
-\begin{itemize}
-\tightlist
-\item
-  Do research on the authors and what they have accomplished
-\item
-  Which Journal was this published in
-\item
-  Good example of the use of statistics as an interdisciplinary tool
-\end{itemize}
-\end{frame}
-
 \begin{frame}{Introduction}
 \protect\hypertarget{introduction}{}
-\begin{itemize}
-\tightlist
-\item
-  Meta-analyses usually use 3 effect size measures:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Cohen's d
-  \item
-    Hedge's g
-  \item
-    Glass delta
-  \item
-    Cite all of these next to the bullet points
-  \end{itemize}
-\end{itemize}
+As noted by \citet{dankeleffect}, this is a test.
 \end{frame}
 
 \begin{frame}{References}
 \protect\hypertarget{references}{}
+\bibliography{pres}
 \end{frame}
 
 \end{document}
