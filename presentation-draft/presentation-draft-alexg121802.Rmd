@@ -47,10 +47,22 @@ In effect size calculations for paired data,the authors argue that people tend t
 - Dankel and his team prefer this method of assessing variability 
 
 ## Authors 
-- Do research on the authors and what they have accomplished
-- Which Journal was this published in 
-- Good example of the use of statistics as an interdisciplinary tool 
+### Dr. Scott Dankel
+- Professor at Rowan University, a public research university in New Jersey
+- Attended the University of Mississippi to pursue a Masters and PhD in Exercise Science
+- Research Interests include acute and chronic adaptations to blood flow restricted exercise (Cite)
 
+## Authors (continued...)
+
+### Jeremy Paul Loenneke
+- Professor at The University of Mississippi
+- Attended Southeast Missouri State for his Bachelors and Masters in Nutrition and Exercise Science
+- Eventually got his PhD in Exercise Physiology at the University of Oklahoma
+- Research Discipline is in Skeletal Muscle Plasticity (Cite)
+
+### General Comments
+- Regarding the disciplines of the authors, this paper was published in The Journal of Strength and Conditioning Research
+- Good example of the use of statistics as an interdisciplinary tool 
 
 ## Introduction
 
