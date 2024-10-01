@@ -24,21 +24,27 @@ header-includes:
 
 
 ## Abstract
-  - Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change score variability rather than the pre-test variability. J Strength Cond Res 35(6): 1773–1778, 2021—
+### Full Citation
+Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change score variability rather than the pre-test variability. J Strength Cond Res 35(6): 1773–1778, 2021—
 
 ### What is effect size 
-  - Blah Blah Blah (source in parentheses)
-  - how is it different from T test statistic
-  - where r they used? (meta analyses specifically for sports and exercise science)
+  - Variable that provides an overall measure for magnitude of change (Cite)
+  - Differs from a T-statistic because sample size is not included
+  - Used in various baseline-post-treatment comparison
+    - Specifically, they are looking at this comparison from the lens of meta-analyses for exercise science and sports medicine
 
 ## Main Issue 
-In effect size calculations, people tend to use the wrong kind of variability in their calculations. What are the two different types? 
+In effect size calculations for paired data,the authors argue that people tend to use the wrong kind of variability. What are the two kinds of variability that they are referring to? 
 
-### Variability of the Study Sample
-Represented by the Blah Blah. Dankel and his team claim that ...
+## Variability of the Study Sample
+- Any measure of difference between subjects in a given treatment group
+- Represented by the Baseline and Post-treatment Standard Deviation. 
+- Dankel(Cite) and his team claim that the use of this type of variability in paired-sample studies is useless as it has nothing to do with the treatment itself
 
-### Variability of the Intervention
-Represented by the Blah Blah. Dankel and his team claim that ....
+## Variability of the Intervention
+- Any measure of difference between baseline and post-treatment measure
+- Represented in ths case by the Standard Deviation of Change Scores (I will elaborate on this later)
+- Dankel and his team prefer this method of assessing variability 
 
 ## Authors 
 - Do research on the authors and what they have accomplished
@@ -48,12 +54,24 @@ Represented by the Blah Blah. Dankel and his team claim that ....
 
 ## Introduction
 
-- Meta-analyses usually use 3 effect size measures: 
-  - Cohen's d 
-  - Hedge's g 
-  - Glass delta
-  - Cite all of these next to the bullet points 
+### Specific Effect Size Measures
+  - Cohen's d (Cite)
+  - Hedge's g (Cite)
+  - Glass delta (Cite)
+  - Each use some combination of baseline standard deviation and post-treatment standard deviation.
+  - Measures of variability of the study sample
+### Paired Data vs. Independent Data
+  - Brief overview of each
 
+## Methods 
+
+## Figure 1 
+
+## Figure 2
+
+## Results
+
+## Discussion
 
 ## References 
 
