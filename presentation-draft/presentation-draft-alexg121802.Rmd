@@ -20,50 +20,55 @@ header-includes:
   - \setbeamersize{text margin left=1in, text margin right=1in}
 ---
 
-## Abstract
 
-### Full Citation
-Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change score variability rather than the pre-test variability. J Strength Cond Res 35(6): 1773–1778, 2021—
+# Full Citation
+Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change score variability rather than the pre-test variability. J Strength Cond Res 35(6): 1773–1778, 2021—}
 
-## What is effect size 
+
+# What is effect size 
   - Variable that provides an overall measure for magnitude of change (@dankeleffect)
   - Differs from a T-statistic because sample size is not included
   - Used in various baseline-post-treatment comparison
     - Specifically, they are looking at this comparison from the lens of meta-analyses for exercise science and sports medicine
 
-## Authors' Aims
+
+# Authors' Aims
 
 - To convince the audience through analysis that baseline and post-test standard deviations (study sample measures of variability) don't tell the full story on the overall variability of the intervention. 
 - To convince the readers that the heterogeneity of the study sample can play a part in unintentionally influencing effect size measurements.
 
 How would one describe the two types of aforementioned variability?
 
-## Variability of the Study Sample
+
+# Variability of the Study Sample
 - Any measure of difference between subjects in a given treatment group
 - Represented by the Baseline and Post-treatment Standard Deviation. 
 - Dankel(@dankeleffect) and his team claim that the use of this type of variability in paired-sample studies is useless as it has nothing to do with the treatment itself
 
-## Variability of the Intervention
+
+# Variability of the Intervention
 - Any measure of difference between baseline and post-treatment measure
 - Represented in this case by the Standard Deviation of Change Scores (I will elaborate on this later)
 - Dankel and his team prefer this method of assessing variability 
 
-# Authors 
 
-## Dr. Scott Dankel
+# Dr. Scott Dankel
 - Professor at Rowan University, a public research university in New Jersey
 - Attended the University of Mississippi to pursue a Masters and PhD in Exercise Science
 - Research Interests include acute and chronic adaptations to blood flow restricted exercise  [@dankelintro]
 
-## Jeremy Paul Loenneke
+
+# Jeremy Paul Loenneke
 - Professor at The University of Mississippi
 - Attended Southeast Missouri State for his Bachelors and Masters in Nutrition and Exercise Science
 - Eventually got his PhD in Exercise Physiology at the University of Oklahoma
 - Research Discipline is in Skeletal Muscle Plasticity [@loennekeintro]
 
-### General Comments
+
+## General Comments
 - Regarding the disciplines of the authors, this paper was published in The Journal of Strength and Conditioning Research
 - Good example of the use of statistics as an interdisciplinary tool 
+
 
 # Introduction
 
@@ -79,38 +84,51 @@ The author's claim that the common effect size measures listed below are used ex
   - Each use some combination of baseline standard deviation and post-treatment standard deviation.
   - Measures of variability of the study sample
 
-## Paired Data vs. Independent Data
 
-### Independent Data
+# Paired Data vs. Independent Data
+
+## Independent Data
   - Data collected through an Independent design
     - Each subject is only measured once
     - Subjects are allocated into a baseline group and a post-treatment group
     - Study sample variability is more important 
     - The pooled standard error is the way to assess this variability
-  
-### Paired Data
+
+## Paired Data
   - Data that is collected through a Paired Sample design 
-      - The same subject is assessed at both the baseline and post-treatment time points. 
+      - Same subject is assessed at both time points. 
       - Since its based on the same subject, this data is not independent
       - In this type of Design, study sample variability is irrelevant
-      - Variability of the Intervention assessed by standard error of the change scores
+      - Variability of assessed by standard error of the change scores
 
 Since most meta-analysis data is paired, Dankel's analysis focuses on primarily paired-sample designs. Therefore, the authors believe that intervention variability is the best measure for this specific analysis. 
 
+
 # Methods 
 
-## Calculations of Common Effect Size measures 
-$M_{change}=M_{\text{post}}-M_{\text{bsl}}=\text{Difference between means of Posttreatment group and baseline group in an independent design }$
+## Preliminary measures
+$$
+M_{change}=\text{Difference between means of Posttreatment group and baseline group in an independent design }
+$$
+$$
+SD_{bsl}={\text{Standard Deviation of the baseline group in an independent design}}
+$$
+$$
+SD_{post}={\text{Standard Deviation of the posttreatment group in an independent design}}
+$$
+$$
+n_{bsl}= \text{The sample size of the baseline group}
+$$
+$$
+n_{post}= \text{The sample size of the posttreatment group}
+$$
 
-$SD_{bsl}={\text{Standard Deviation of the baseline group in an independent design}}$
+$$
+SD_\text{pooled}=\sqrt{\frac{(n_{\text{bsl}}-1)SD_{\text{bsl}}^2+(n_{\text{post}}-1)SD^2_{\text{post}}}{
+n_{\text{bsl}}+n_{\text{post}}-2}}
+$$
 
-$SD_{post}={\text{Standard Deviation of the posttreatment group in an independent design}}$
-
-$n_{bsl}=$ The sample size of the baseline group
-
-$n_{post}=$ The sample size of the posttreatment group
-
-$SD_\text{pooled}=\sqrt{\frac{(n_{\text{bsl}}-1)SD_{\text{bsl}}^2+(n_{\text{post}}-1)SD^2_{\text{post}}}{n_{\text{bsl}}+n_{\text{post}}-2}}$
+# Calculations of Common Effect Size measures 
 
 $\text{Cohen's } d= \frac{M_\text{change}}{SD_\text{pooled}}$
 
@@ -120,20 +138,22 @@ $\text{Hedge's }g= C*\frac{M_\text{change}}{SD_\text{pooled}}$
 
 Where $C$ is a constant multiplied to account for small sample sizes
 
+Based off these measures, we can calculate an Independent $t$ test statistic: 
+
+$T_\text{indep}=\frac{es^*}{\sqrt{n^*}}$
+
+Where $es^*$ is whatever effect size above is being used and $n*$ is the total sample size of the group we are trying to prove the significance of. From this it is apparent how using the incorrect effect size can be detrimental to a given analysis. 
+
+# Analysis and Procedure
 
 
-## Analysis and Procedure
+# Figure 1 
 
+# Figure 2
 
-## Figure 1 
-
-## Figure 2
-
-## Results
+# Results
 
 # Discussion
-
-
 
 # References 
 

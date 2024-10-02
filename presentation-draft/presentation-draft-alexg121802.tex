@@ -131,18 +131,14 @@ variability rather than the pre-test variability.}
 \begin{document}
 \frame{\titlepage}
 
-\begin{frame}
-\begin{block}{Abstract}
-\protect\hypertarget{abstract}{}
-\begin{block}{Full Citation}
+\begin{frame}{Full Citation}
 \protect\hypertarget{full-citation}{}
 Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the
 change score variability rather than the pre-test variability. J
-Strength Cond Res 35(6): 1773--1778, 2021---
-\end{block}
-\end{block}
+Strength Cond Res 35(6): 1773--1778, 2021---\}
+\end{frame}
 
-\begin{block}{What is effect size}
+\begin{frame}{What is effect size}
 \protect\hypertarget{what-is-effect-size}{}
 \begin{itemize}
 \tightlist
@@ -161,9 +157,9 @@ Strength Cond Res 35(6): 1773--1778, 2021---
     meta-analyses for exercise science and sports medicine
   \end{itemize}
 \end{itemize}
-\end{block}
+\end{frame}
 
-\begin{block}{Authors' Aims}
+\begin{frame}{Authors' Aims}
 \protect\hypertarget{authors-aims}{}
 \begin{itemize}
 \tightlist
@@ -177,9 +173,9 @@ Strength Cond Res 35(6): 1773--1778, 2021---
 \end{itemize}
 
 How would one describe the two types of aforementioned variability?
-\end{block}
+\end{frame}
 
-\begin{block}{Variability of the Study Sample}
+\begin{frame}{Variability of the Study Sample}
 \protect\hypertarget{variability-of-the-study-sample}{}
 \begin{itemize}
 \tightlist
@@ -192,9 +188,9 @@ How would one describe the two types of aforementioned variability?
   this type of variability in paired-sample studies is useless as it has
   nothing to do with the treatment itself
 \end{itemize}
-\end{block}
+\end{frame}
 
-\begin{block}{Variability of the Intervention}
+\begin{frame}{Variability of the Intervention}
 \protect\hypertarget{variability-of-the-intervention}{}
 \begin{itemize}
 \tightlist
@@ -206,12 +202,9 @@ How would one describe the two types of aforementioned variability?
 \item
   Dankel and his team prefer this method of assessing variability
 \end{itemize}
-\end{block}
 \end{frame}
 
-\begin{frame}{Authors}
-\protect\hypertarget{authors}{}
-\begin{block}{Dr.~Scott Dankel}
+\begin{frame}{Dr.~Scott Dankel}
 \protect\hypertarget{dr.-scott-dankel}{}
 \begin{itemize}
 \tightlist
@@ -225,9 +218,9 @@ How would one describe the two types of aforementioned variability?
   Research Interests include acute and chronic adaptations to blood flow
   restricted exercise (2024a)
 \end{itemize}
-\end{block}
+\end{frame}
 
-\begin{block}{Jeremy Paul Loenneke}
+\begin{frame}{Jeremy Paul Loenneke}
 \protect\hypertarget{jeremy-paul-loenneke}{}
 \begin{itemize}
 \tightlist
@@ -254,7 +247,6 @@ How would one describe the two types of aforementioned variability?
   Good example of the use of statistics as an interdisciplinary tool
 \end{itemize}
 \end{block}
-\end{block}
 \end{frame}
 
 \begin{frame}{Introduction}
@@ -278,8 +270,9 @@ used exhaustively in meta-analyses in the exercise science discipline.
   Measures of variability of the study sample
 \end{itemize}
 \end{block}
+\end{frame}
 
-\begin{block}{Paired Data vs.~Independent Data}
+\begin{frame}{Paired Data vs.~Independent Data}
 \protect\hypertarget{paired-data-vs.-independent-data}{}
 \begin{block}{Independent Data}
 \protect\hypertarget{independent-data}{}
@@ -313,15 +306,13 @@ used exhaustively in meta-analyses in the exercise science discipline.
   \begin{itemize}
   \tightlist
   \item
-    The same subject is assessed at both the baseline and post-treatment
-    time points.
+    Same subject is assessed at both time points.
   \item
     Since its based on the same subject, this data is not independent
   \item
     In this type of Design, study sample variability is irrelevant
   \item
-    Variability of the Intervention assessed by standard error of the
-    change scores
+    Variability of assessed by standard error of the change scores
   \end{itemize}
 \end{itemize}
 
@@ -329,25 +320,33 @@ Since most meta-analysis data is paired, Dankel's analysis focuses on
 primarily paired-sample designs. Therefore, the authors believe that
 intervention variability is the best measure for this specific analysis.
 \end{block}
-\end{block}
 \end{frame}
 
 \begin{frame}{Methods}
 \protect\hypertarget{methods}{}
-\begin{block}{Calculations of Common Effect Size measures}
+\begin{block}{Preliminary measures}
+\protect\hypertarget{preliminary-measures}{}
+\[
+M_{change}=\text{Difference between means of Posttreatment group and baseline group in an independent design }
+\] \[
+SD_{bsl}={\text{Standard Deviation of the baseline group in an independent design}}
+\] \[
+SD_{post}={\text{Standard Deviation of the posttreatment group in an independent design}}
+\] \[
+n_{bsl}= \text{The sample size of the baseline group}
+\] \[
+n_{post}= \text{The sample size of the posttreatment group}
+\]
+
+\[
+SD_\text{pooled}=\sqrt{\frac{(n_{\text{bsl}}-1)SD_{\text{bsl}}^2+(n_{\text{post}}-1)SD^2_{\text{post}}}{
+n_{\text{bsl}}+n_{\text{post}}-2}}
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}{Calculations of Common Effect Size measures}
 \protect\hypertarget{calculations-of-common-effect-size-measures}{}
-\(M_{change}=M_{\text{post}}-M_{\text{bsl}}=\text{Difference between means of Posttreatment group and baseline group in an independent design }\)
-
-\(SD_{bsl}={\text{Standard Deviation of the baseline group in an independent design}}\)
-
-\(SD_{post}={\text{Standard Deviation of the posttreatment group in an independent design}}\)
-
-\(n_{bsl}=\) The sample size of the baseline group
-
-\(n_{post}=\) The sample size of the posttreatment group
-
-\(SD_\text{pooled}=\sqrt{\frac{(n_{\text{bsl}}-1)SD_{\text{bsl}}^2+(n_{\text{post}}-1)SD^2_{\text{post}}}{n_{\text{bsl}}+n_{\text{post}}-2}}\)
-
 \(\text{Cohen's } d= \frac{M_\text{change}}{SD_\text{pooled}}\)
 
 \(\text{Glass's } \delta = \frac{M_\text{change}}{SD_{\text{bsl}}}\)
@@ -355,23 +354,32 @@ intervention variability is the best measure for this specific analysis.
 \(\text{Hedge's }g= C*\frac{M_\text{change}}{SD_\text{pooled}}\)
 
 Where \(C\) is a constant multiplied to account for small sample sizes
-\end{block}
 
-\begin{block}{Analysis and Procedure}
+Based off these measures, we can calculate an Independent \(t\) test
+statistic:
+
+\(T_\text{indep}=\frac{es^*}{\sqrt{n^*}}\)
+
+Where \(es^*\) is whatever effect size above is being used and \(n*\) is
+the total sample size of the group we are trying to prove the
+significance of. From this it is apparent how using the incorrect effect
+size can be detrimental to a given analysis.
+\end{frame}
+
+\begin{frame}{Analysis and Procedure}
 \protect\hypertarget{analysis-and-procedure}{}
-\end{block}
+\end{frame}
 
-\begin{block}{Figure 1}
+\begin{frame}{Figure 1}
 \protect\hypertarget{figure-1}{}
-\end{block}
+\end{frame}
 
-\begin{block}{Figure 2}
+\begin{frame}{Figure 2}
 \protect\hypertarget{figure-2}{}
-\end{block}
+\end{frame}
 
-\begin{block}{Results}
+\begin{frame}{Results}
 \protect\hypertarget{results}{}
-\end{block}
 \end{frame}
 
 \begin{frame}{Discussion}
