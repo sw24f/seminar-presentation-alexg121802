@@ -81,7 +81,29 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\usepackage{natbib}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -109,13 +131,15 @@ variability rather than the pre-test variability.}
 \begin{document}
 \frame{\titlepage}
 
-\begin{frame}{Abstract}
+\begin{frame}
+\begin{block}{Abstract}
 \protect\hypertarget{abstract}{}
 \begin{block}{Full Citation}
 \protect\hypertarget{full-citation}{}
 Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the
 change score variability rather than the pre-test variability. J
 Strength Cond Res 35(6): 1773--1778, 2021---
+\end{block}
 \end{block}
 
 \begin{block}{What is effect size}
@@ -124,7 +148,7 @@ Strength Cond Res 35(6): 1773--1778, 2021---
 \tightlist
 \item
   Variable that provides an overall measure for magnitude of change
-  (Cite)
+  (Dankel and Loenneke (2021))
 \item
   Differs from a T-statistic because sample size is not included
 \item
@@ -138,16 +162,24 @@ Strength Cond Res 35(6): 1773--1778, 2021---
   \end{itemize}
 \end{itemize}
 \end{block}
-\end{frame}
 
-\begin{frame}{Main Issue}
-\protect\hypertarget{main-issue}{}
-In effect size calculations for paired data,the authors argue that
-people tend to use the wrong kind of variability. What are the two kinds
-of variability that they are referring to?
-\end{frame}
+\begin{block}{Authors' Aims}
+\protect\hypertarget{authors-aims}{}
+\begin{itemize}
+\tightlist
+\item
+  To convince the audience through analysis that baseline and post-test
+  standard deviations (study sample measures of variability) don't tell
+  the full story on the overall variability of the intervention.
+\item
+  To convince the readers that the heterogeneity of the study sample can
+  play a part in unintentionally influencing effect size measurements.
+\end{itemize}
 
-\begin{frame}{Variability of the Study Sample}
+How would one describe the two types of aforementioned variability?
+\end{block}
+
+\begin{block}{Variability of the Study Sample}
 \protect\hypertarget{variability-of-the-study-sample}{}
 \begin{itemize}
 \tightlist
@@ -156,13 +188,13 @@ of variability that they are referring to?
 \item
   Represented by the Baseline and Post-treatment Standard Deviation.
 \item
-  Dankel(Cite) and his team claim that the use of this type of
-  variability in paired-sample studies is useless as it has nothing to
-  do with the treatment itself
+  Dankel(Dankel and Loenneke (2021)) and his team claim that the use of
+  this type of variability in paired-sample studies is useless as it has
+  nothing to do with the treatment itself
 \end{itemize}
-\end{frame}
+\end{block}
 
-\begin{frame}{Variability of the Intervention}
+\begin{block}{Variability of the Intervention}
 \protect\hypertarget{variability-of-the-intervention}{}
 \begin{itemize}
 \tightlist
@@ -174,6 +206,7 @@ of variability that they are referring to?
 \item
   Dankel and his team prefer this method of assessing variability
 \end{itemize}
+\end{block}
 \end{frame}
 
 \begin{frame}{Authors}
@@ -190,13 +223,10 @@ of variability that they are referring to?
   Exercise Science
 \item
   Research Interests include acute and chronic adaptations to blood flow
-  restricted exercise (Cite)
+  restricted exercise (2024a)
 \end{itemize}
 \end{block}
-\end{frame}
 
-\begin{frame}{Authors (continued\ldots)}
-\protect\hypertarget{authors-continued}{}
 \begin{block}{Jeremy Paul Loenneke}
 \protect\hypertarget{jeremy-paul-loenneke}{}
 \begin{itemize}
@@ -210,9 +240,8 @@ of variability that they are referring to?
   Eventually got his PhD in Exercise Physiology at the University of
   Oklahoma
 \item
-  Research Discipline is in Skeletal Muscle Plasticity (Cite)
+  Research Discipline is in Skeletal Muscle Plasticity (2024b)
 \end{itemize}
-\end{block}
 
 \begin{block}{General Comments}
 \protect\hypertarget{general-comments}{}
@@ -225,15 +254,16 @@ of variability that they are referring to?
   Good example of the use of statistics as an interdisciplinary tool
 \end{itemize}
 \end{block}
+\end{block}
 \end{frame}
 
 \begin{frame}{Introduction}
 \protect\hypertarget{introduction}{}
+\begin{block}{Specific Effect Size Measures}
+\protect\hypertarget{specific-effect-size-measures}{}
 The author's claim that the common effect size measures listed below are
 used exhaustively in meta-analyses in the exercise science discipline.
 
-\begin{block}{Specific Effect Size Measures}
-\protect\hypertarget{specific-effect-size-measures}{}
 \begin{itemize}
 \item
   Cohen's d (Cite)
@@ -248,9 +278,8 @@ used exhaustively in meta-analyses in the exercise science discipline.
   Measures of variability of the study sample
 \end{itemize}
 \end{block}
-\end{frame}
 
-\begin{frame}{Paired Data vs.~Independent Data}
+\begin{block}{Paired Data vs.~Independent Data}
 \protect\hypertarget{paired-data-vs.-independent-data}{}
 \begin{block}{Independent Data}
 \protect\hypertarget{independent-data}{}
@@ -295,23 +324,54 @@ used exhaustively in meta-analyses in the exercise science discipline.
     change scores
   \end{itemize}
 \end{itemize}
+
+Since most meta-analysis data is paired, Dankel's analysis focuses on
+primarily paired-sample designs. Therefore, the authors believe that
+intervention variability is the best measure for this specific analysis.
+\end{block}
 \end{block}
 \end{frame}
 
 \begin{frame}{Methods}
 \protect\hypertarget{methods}{}
-\end{frame}
+\begin{block}{Calculations of Common Effect Size measures}
+\protect\hypertarget{calculations-of-common-effect-size-measures}{}
+\(M_{change}=M_{\text{post}}-M_{\text{bsl}}=\text{Difference between means of Posttreatment group and baseline group in an independent design }\)
 
-\begin{frame}{Figure 1}
+\(SD_{bsl}={\text{Standard Deviation of the baseline group in an independent design}}\)
+
+\(SD_{post}={\text{Standard Deviation of the posttreatment group in an independent design}}\)
+
+\(n_{bsl}=\) The sample size of the baseline group
+
+\(n_{post}=\) The sample size of the posttreatment group
+
+\(SD_\text{pooled}=\sqrt{\frac{(n_{\text{bsl}}-1)SD_{\text{bsl}}^2+(n_{\text{post}}-1)SD^2_{\text{post}}}{n_{\text{bsl}}+n_{\text{post}}-2}}\)
+
+\(\text{Cohen's } d= \frac{M_\text{change}}{SD_\text{pooled}}\)
+
+\(\text{Glass's } \delta = \frac{M_\text{change}}{SD_{\text{bsl}}}\)
+
+\(\text{Hedge's }g= C*\frac{M_\text{change}}{SD_\text{pooled}}\)
+
+Where \(C\) is a constant multiplied to account for small sample sizes
+\end{block}
+
+\begin{block}{Analysis and Procedure}
+\protect\hypertarget{analysis-and-procedure}{}
+\end{block}
+
+\begin{block}{Figure 1}
 \protect\hypertarget{figure-1}{}
-\end{frame}
+\end{block}
 
-\begin{frame}{Figure 2}
+\begin{block}{Figure 2}
 \protect\hypertarget{figure-2}{}
-\end{frame}
+\end{block}
 
-\begin{frame}{Results}
+\begin{block}{Results}
 \protect\hypertarget{results}{}
+\end{block}
 \end{frame}
 
 \begin{frame}{Discussion}
@@ -320,6 +380,22 @@ used exhaustively in meta-analyses in the exercise science discipline.
 
 \begin{frame}{References}
 \protect\hypertarget{references}{}
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-loennekeintro}{}}%
+2024b. \url{https://hesrm.olemiss.edu/people/jeremy-paul-loenneke/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-dankelintro}{}}%
+---------. 2024a.
+\url{https://research.rowan.edu/research-areas/hes/dankel/about.html}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-dankeleffect}{}}%
+Dankel, Scott J., and Jeremy P. Loenneke. 2021. {``EFFECT SIZES FOR
+PAIRED DATA SHOULD USE THE CHANGE SCORE VARIABILITY RATHER THAN THE PRE-
+TEST VARIABILITY.''} \emph{Journal of Strength and Conditioning
+Research} 6 (35): 1773--78.
+
+\end{CSLReferences}
 \end{frame}
 
 \end{document}
