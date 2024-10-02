@@ -43,7 +43,7 @@ In effect size calculations for paired data,the authors argue that people tend t
 
 ## Variability of the Intervention
 - Any measure of difference between baseline and post-treatment measure
-- Represented in ths case by the Standard Deviation of Change Scores (I will elaborate on this later)
+- Represented in this case by the Standard Deviation of Change Scores (I will elaborate on this later)
 - Dankel and his team prefer this method of assessing variability 
 
 ## Authors 
@@ -66,15 +66,33 @@ In effect size calculations for paired data,the authors argue that people tend t
 
 ## Introduction
 
+The author's claim that the common effect size measures listed below are used exhaustively in meta-analyses in the exercise science discipline. 
+
 ### Specific Effect Size Measures
   - Cohen's d (Cite)
   - Hedge's g (Cite)
   - Glass delta (Cite)
+  
+  
   - Each use some combination of baseline standard deviation and post-treatment standard deviation.
   - Measures of variability of the study sample
-### Paired Data vs. Independent Data
-  - Brief overview of each
 
+## Paired Data vs. Independent Data
+
+### Independent Data
+  - Data collected through an Independent design
+    - Each subject is only measured once
+    - Subjects are allocated into a baseline group and a post-treatment group
+    - Study sample variability is more important 
+    - The pooled standard error is the way to assess this variability
+  
+### Paired Data
+  - Data that is collected through a Paired Sample design 
+      - The same subject is assessed at both the baseline and post-treatment time points. 
+      - Since its based on the same subject, this data is not independent
+      - In this type of Design, study sample variability is irrelevant
+      - Variability of the Intervention assessed by standard error of the change scores
+  
 ## Methods 
 
 ## Figure 1 
