@@ -110,7 +110,7 @@
 \usepackage{setspace}
 \usepackage{float}
 \usepackage{hyperref}
-\setbeamersize{text margin left=1in, text margin right=1in}
+\setbeamersize{text margin left=0.25in, text margin right=0.25in}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -118,13 +118,15 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Effect sizes for paired data should use the change score variability rather than the pre-test variability.},
+  pdftitle={Effect sizes for paired data should use the change score variability rather than the pre-test variability:  A Paper by Dr.~Scott Dankel and Dr.~Jeremy P. Loenneke},
   pdfauthor={Alex Gould},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{Effect sizes for paired data should use the change score
-variability rather than the pre-test variability.}
+variability rather than the pre-test variability:\\
+\strut \\
+A Paper by Dr.~Scott Dankel and Dr.~Jeremy P. Loenneke}
 \author{Alex Gould}
 \date{2024-10-02}
 
@@ -148,7 +150,8 @@ Strength Cond Res 35(6): 1773--1778, 2021---\}
 \item
   Differs from a T-statistic because sample size is not included
 \item
-  Used in various baseline-post-treatment comparison
+  Quantifies how much the mean of the post-treatment differs from the
+  mean of the baseline score in terms of a certain standard deviation.
 
   \begin{itemize}
   \tightlist
@@ -184,8 +187,8 @@ How would one describe the two types of aforementioned variability?
 \item
   Represented by the Baseline and Post-treatment Standard Deviation.
 \item
-  Dankel(Dankel and Loenneke (2021)) and his team claim that the use of
-  this type of variability in paired-sample studies is useless as it has
+  Dankel and Loenneke (2021) and his team claim that the use of this
+  type of variability in paired-sample studies is useless as it has
   nothing to do with the treatment itself
 \end{itemize}
 \end{frame}
@@ -216,14 +219,13 @@ How would one describe the two types of aforementioned variability?
   Exercise Science
 \item
   Research Interests include acute and chronic adaptations to blood flow
-  restricted exercise (2024a)
+  restricted exercise (Lab 2024)
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Jeremy Paul Loenneke}
-\protect\hypertarget{jeremy-paul-loenneke}{}
+\begin{frame}{Dr.~Jeremy Paul Loenneke}
+\protect\hypertarget{dr.-jeremy-paul-loenneke}{}
 \begin{itemize}
-\tightlist
 \item
   Professor at The University of Mississippi
 \item
@@ -233,20 +235,12 @@ How would one describe the two types of aforementioned variability?
   Eventually got his PhD in Exercise Physiology at the University of
   Oklahoma
 \item
-  Research Discipline is in Skeletal Muscle Plasticity (2024b)
-\end{itemize}
-
-\begin{block}{General Comments}
-\protect\hypertarget{general-comments}{}
-\begin{itemize}
-\tightlist
+  Research Discipline is in Skeletal Muscle Plasticity (Ole Miss 2024)
 \item
   Regarding the disciplines of the authors, this paper was published in
-  The Journal of Strength and Conditioning Research
-\item
-  Good example of the use of statistics as an interdisciplinary tool
+  The Journal of Strength and Conditioning Research. This is a good
+  example of the use of statistics as an interdisciplinary tool
 \end{itemize}
-\end{block}
 \end{frame}
 
 \begin{frame}{Introduction}
@@ -353,55 +347,97 @@ n_{\text{bsl}}+n_{\text{post}}-2}}
 
 \(\text{Hedge's }g= C*\frac{M_\text{change}}{SD_\text{pooled}}\)
 
-Where \(C\) is a constant multiplied to account for small sample sizes
+Where \(C\) is a factor depending on \(n\) multiplied to account for
+small sample sizes
 
-Based off these measures, we can calculate an Independent \(t\) test
-statistic:
+We can calculate an Independent \(t\) test statistic:
 
-\(T_\text{indep}=\frac{es^*}{\sqrt{n^*}}\)
+\(T_\text{indep}= \frac{M_{\text{change}}}{\sqrt{SD_{\text{pooled}}(\frac{1}{n_\text{bsl}}+\frac{1}{n_{\text{post}}})}}\)
 
-Where \(es^*\) is whatever effect size above is being used and \(n*\) is
-the total sample size of the group we are trying to prove the
-significance of. From this it is apparent how using the incorrect effect
-size can be detrimental to a given analysis.
+Where \(d\) represents Cohen's \(d\). From this it is apparent how using
+the incorrect effect size can be detrimental to a given analysis when
+using a Paired Design.
 \end{frame}
 
 \begin{frame}{Analysis and Procedure}
 \protect\hypertarget{analysis-and-procedure}{}
+\begin{itemize}
+\tightlist
+\item
+  1st figure shows \ldots{}
+\item
+  2nd figure shows \ldots{}
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Figure 1}
 \protect\hypertarget{figure-1}{}
+\emph{paste figure} briefly explain A,B,C
 \end{frame}
 
 \begin{frame}{Figure 2}
 \protect\hypertarget{figure-2}{}
+\emph{paste figure} briefly explain A,B,C
 \end{frame}
 
-\begin{frame}{Results}
-\protect\hypertarget{results}{}
+\begin{frame}{Results (Dankel et. al)}
+\protect\hypertarget{results-dankel-et.-al}{}
+paste bottom of fig1 and fig2 and explain results and what went wrong .
+- mention that 11.618 makes no sense as an effect size measure
+\end{frame}
+
+\begin{frame}{My Results}
+\protect\hypertarget{my-results}{}
+Recalculate Cohen's dz and show if it changes the significance at all.
+mention:
+\(SD_\text{change}`=\sqrt{SD_{\text{pre}}^2+SD_{\text{post}}^2-2rSD_{pre}SD_{post}}\)
+this is the formula used in the article
 \end{frame}
 
 \begin{frame}{Discussion}
 \protect\hypertarget{discussion}{}
+\#\#General Impossible to quantify variability of actual intervention
+when using pre-post scores
+
+Figure 1: Intervention 1 produces positive effect where intervention two
+does not
+
+Common effect size measures are reliant on the heterogeneity of the
+study population
+
+Figure 2 shows identical results in 2 diff groups with the only
+difference being that intervention 1 used a more heterogeneous
+population
+
+\#\#Other Issues/Notes Notes: normalizing using the preSD only is
+dependent on the subjects recruited rather than effectiveness
+
+Also used in triangulation when trying to obtain sample size
+calculations
+\end{frame}
+
+\begin{frame}{Any Questions?}
+\protect\hypertarget{any-questions}{}
 \end{frame}
 
 \begin{frame}{References}
 \protect\hypertarget{references}{}
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-loennekeintro}{}}%
-2024b. \url{https://hesrm.olemiss.edu/people/jeremy-paul-loenneke/}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-dankelintro}{}}%
----------. 2024a.
-\url{https://research.rowan.edu/research-areas/hes/dankel/about.html}.
-
 \leavevmode\vadjust pre{\hypertarget{ref-dankeleffect}{}}%
 Dankel, Scott J., and Jeremy P. Loenneke. 2021. {``EFFECT SIZES FOR
 PAIRED DATA SHOULD USE THE CHANGE SCORE VARIABILITY RATHER THAN THE PRE-
 TEST VARIABILITY.''} \emph{Journal of Strength and Conditioning
 Research} 6 (35): 1773--78.
+
+\leavevmode\vadjust pre{\hypertarget{ref-dankelintro}{}}%
+Lab, Scott J. Dankel. 2024. {``About Dr. Dankel.''}
+\url{https://research.rowan.edu/research-areas/hes/dankel/about.html}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-loennekeintro}{}}%
+Ole Miss, Jeremy Paul Loenneke Lab at. 2024. {``Jeremy Paul Loenneke
+Introduction.''}
+\url{https://hesrm.olemiss.edu/people/jeremy-paul-loenneke/}.
 
 \end{CSLReferences}
 \end{frame}

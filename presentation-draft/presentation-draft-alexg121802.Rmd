@@ -1,6 +1,9 @@
 
 ---
-title: "Effect sizes for paired data should use the change score variability rather than the pre-test variability."
+title: "Effect sizes for paired data should use the change score variability rather than the pre-test variability:\\
+
+
+A Paper by Dr. Scott Dankel and Dr. Jeremy P. Loenneke"
 author: "Alex Gould"
 date: "`r Sys.Date()`"
 bibliography: pres.bib
@@ -17,7 +20,7 @@ header-includes:
   - \usepackage{setspace}
   - \usepackage{float}
   - \usepackage{hyperref}
-  - \setbeamersize{text margin left=1in, text margin right=1in}
+  - \setbeamersize{text margin left=0.25in, text margin right=0.25in}
 ---
 
 
@@ -28,7 +31,8 @@ Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change 
 # What is effect size 
   - Variable that provides an overall measure for magnitude of change (@dankeleffect)
   - Differs from a T-statistic because sample size is not included
-  - Used in various baseline-post-treatment comparison
+  - Quantifies how much the mean of the post-treatment differs from the mean of the baseline score
+  in terms of a certain standard deviation.
     - Specifically, they are looking at this comparison from the lens of meta-analyses for exercise science and sports medicine
 
 
@@ -43,7 +47,7 @@ How would one describe the two types of aforementioned variability?
 # Variability of the Study Sample
 - Any measure of difference between subjects in a given treatment group
 - Represented by the Baseline and Post-treatment Standard Deviation. 
-- Dankel(@dankeleffect) and his team claim that the use of this type of variability in paired-sample studies is useless as it has nothing to do with the treatment itself
+- @dankeleffect and his team claim that the use of this type of variability in paired-sample studies is useless as it has nothing to do with the treatment itself
 
 
 # Variability of the Intervention
@@ -58,16 +62,14 @@ How would one describe the two types of aforementioned variability?
 - Research Interests include acute and chronic adaptations to blood flow restricted exercise  [@dankelintro]
 
 
-# Jeremy Paul Loenneke
+# Dr. Jeremy Paul Loenneke
 - Professor at The University of Mississippi
 - Attended Southeast Missouri State for his Bachelors and Masters in Nutrition and Exercise Science
 - Eventually got his PhD in Exercise Physiology at the University of Oklahoma
 - Research Discipline is in Skeletal Muscle Plasticity [@loennekeintro]
 
 
-## General Comments
-- Regarding the disciplines of the authors, this paper was published in The Journal of Strength and Conditioning Research
-- Good example of the use of statistics as an interdisciplinary tool 
+- Regarding the disciplines of the authors, this paper was published in The Journal of Strength and Conditioning Research. This is a good example of the use of statistics as an interdisciplinary tool 
 
 
 # Introduction
@@ -136,24 +138,53 @@ $\text{Glass's } \delta = \frac{M_\text{change}}{SD_{\text{bsl}}}$
 
 $\text{Hedge's }g= C*\frac{M_\text{change}}{SD_\text{pooled}}$
 
-Where $C$ is a constant multiplied to account for small sample sizes
+Where $C$ is a factor depending on $n$ multiplied to account for small sample sizes
 
-Based off these measures, we can calculate an Independent $t$ test statistic: 
+We can calculate an Independent $t$ test statistic: 
 
-$T_\text{indep}=\frac{es^*}{\sqrt{n^*}}$
+$T_\text{indep}= \frac{M_{\text{change}}}{\sqrt{SD_{\text{pooled}}(\frac{1}{n_\text{bsl}}+\frac{1}{n_{\text{post}}})}}$
 
-Where $es^*$ is whatever effect size above is being used and $n*$ is the total sample size of the group we are trying to prove the significance of. From this it is apparent how using the incorrect effect size can be detrimental to a given analysis. 
+Where $d$ represents Cohen's $d$. From this it is apparent how using the incorrect effect size can be detrimental to a given analysis when using a Paired Design.  
 
 # Analysis and Procedure
-
+- 1st figure shows ...
+- 2nd figure shows ... 
 
 # Figure 1 
 
+*paste figure*
+briefly explain A,B,C
+
 # Figure 2
 
-# Results
+*paste figure*
+briefly explain A,B,C
+
+# Results (Dankel et. al)
+paste bottom of fig1 and fig2 and explain results and what went wrong .
+- mention that 11.618 makes no sense as an effect size measure 
+
+# My Results 
+Recalculate Cohen's dz and show if it changes the significance at all. 
+mention: $SD_\text{change}`=\sqrt{SD_{\text{pre}}^2+SD_{\text{post}}^2-2rSD_{pre}SD_{post}}$ this is the formula used in the article
 
 # Discussion
+##General
+Impossible to quantify variability of actual intervention when using pre-post scores 
+
+Figure 1: Intervention 1 produces positive effect where intervention two does not 
+
+Common effect size measures are reliant on the heterogeneity of the study population 
+
+Figure 2 shows identical results in 2 diff groups with the only difference being that intervention 1 used a more heterogeneous population 
+
+##Other Issues/Notes
+Notes: normalizing using the preSD only is dependent on the subjects recruited rather than effectiveness 
+
+Also used in triangulation when trying to obtain sample size calculations  
+
+
+# Any Questions? 
 
 # References 
 
