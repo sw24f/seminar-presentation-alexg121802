@@ -158,14 +158,23 @@ Where $d$ represents Cohen's $d$. From this it is apparent how using the incorre
 - Seek to prove that heterogeneity of groups can have a profound effect on Common 
 effect size measures but not on the measure that they define as the "appropriate" effect size
 
+# Figure 1
+Graph A shows that both interventions have the same pre and post means and standard deviations. Graph B shows the graph between pre and post, outlining opposite correlations, and Graph C is a representation of the standard error for each of the intervention groups, showing high variability for intervention 2 and low variability for intervention 1. Supports Aim 1. 
 
-*paste figure*
-briefly explain A,B,C
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{fig1.png}
+\end{figure}
 
 # Figure 2
+Graph A shows that each intervention has the same pre and post mean but different pre-post standard deviations. Graph B shows the graph between pre and post, outlining the same correlations but different pre/post variabilities, and Graph 3 illustrates the variability further by showing that the intervention variability is the same. Supports Aim 2. 
 
-*paste figure*
-briefly explain A,B,C
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{fig2.png}
+\end{figure}
+
+
 
 # Results (Dankel et. al)
 paste bottom of fig1 and fig2 and explain results and what went wrong .
