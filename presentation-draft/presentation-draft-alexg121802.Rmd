@@ -177,15 +177,28 @@ Graph A shows that each intervention has the same pre and post mean but differen
 
 
 # Results (Dankel et. al)
-paste bottom of fig1 and fig2 and explain results and what went wrong .
-- mention that 11.618 makes no sense as an effect size measure 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figresult1.png}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{figresult2.png}
+\end{figure}
+- Respective to the figures above
+- Top attempted to prove aim 1 
+- Bottom attempted to prove aim 2 
+- In both, 11.618 is mentioned as the "Appropriate effect size" even
+though effect sizes rarely range over 4. 
+- Standard Deviation of the change scores is suspiciously low as well
 
 # My Results 
 Recalculate Cohen's dz and show if it changes the significance at all. 
 mention: $SD_\text{change}`=\sqrt{SD_{\text{pre}}^2+SD_{\text{post}}^2-2rSD_{pre}SD_{post}}$ this is the formula used in the article
 
 # Discussion
-##General
+## General
 Impossible to quantify variability of actual intervention when using pre-post scores 
 
 Figure 1: Intervention 1 produces positive effect where intervention two does not 
@@ -200,7 +213,13 @@ Notes: normalizing using the preSD only is dependent on the subjects recruited r
 Also used in triangulation when trying to obtain sample size calculations  
 
 
-# Any Questions? 
+# 
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{any-questions.jpeg}
+\end{figure}
+[@anyquest]
+
 
 # References 
 
