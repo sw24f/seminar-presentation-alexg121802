@@ -128,7 +128,7 @@ variability rather than the pre-test variability:\\
 \strut \\
 A Paper by Dr.~Scott Dankel and Dr.~Jeremy P. Loenneke}
 \author{Alex Gould}
-\date{2024-10-03}
+\date{2024-10-04}
 
 \begin{document}
 \frame{\titlepage}
@@ -321,7 +321,7 @@ intervention variability is the best measure for this specific analysis.
 \begin{block}{Preliminary measures}
 \protect\hypertarget{preliminary-measures}{}
 \[
-M_{change}=\text{Difference between means of Posttreatment group and baseline group in an independent design }
+M_{\text{change}}=M_{\text{post}}-M_{\text{bsl}}=\text{Difference between means}
 \] \[
 SD_{bsl}={\text{Standard Deviation of the baseline group in an independent design}}
 \] \[
@@ -353,10 +353,32 @@ small sample sizes
 We can calculate an Independent \(t\) test statistic:
 
 \(T_\text{indep}= \frac{M_{\text{change}}}{\sqrt{SD_{\text{pooled}}(\frac{1}{n_\text{bsl}}+\frac{1}{n_{\text{post}}})}}\)
+\end{frame}
 
-Where \(d\) represents Cohen's \(d\). From this it is apparent how using
-the incorrect effect size can be detrimental to a given analysis when
-using a Paired Design.
+\begin{frame}{Calculations of the ``Appropriate Effect Size'' Measure}
+\protect\hypertarget{calculations-of-the-appropriate-effect-size-measure}{}
+\begin{itemize}
+\tightlist
+\item
+  Dankel and his team believe that the appropriate effect size measure
+  for this study is Cohen's \(d_z\)
+\item
+  I will outline the components and then the equation reported in the
+  literature
+\end{itemize}
+
+\(r =\)\{sample correlation between baseline and post measures\}
+
+\(SD_\text{change}=\sqrt{SD_{\text{bsl}}^2+SD_{\text{post}}^2-2rSD_{\text{bsl}}SD_{\text{post}}}\)
+
+Cohen's \(d_{z}= \frac{M_\text{change}}{SD_{change}}\)
+
+This also manifests in their calculation of a Paired \(T\) statistic and
+as a resultingly the P-value:
+
+\(n^*=\)\{number of subjects in the paired design\}
+
+\(T_{\text{paired}}=\frac{M_{\text{change}}}{\frac{SD_{\text{change}}}{\sqrt{n^*}}}\)
 \end{frame}
 
 \begin{frame}{Analysis and Procedure}
@@ -453,7 +475,6 @@ showing that the intervention variability is the same. Supports Aim 2.
 
 \begin{frame}{My Results}
 \protect\hypertarget{my-results}{}
-Recalculate Cohen's dz and show if it changes the significance at all.
 mention:
 \(SD_\text{change}`=\sqrt{SD_{\text{pre}}^2+SD_{\text{post}}^2-2rSD_{pre}SD_{post}}\)
 this is the formula used in the article

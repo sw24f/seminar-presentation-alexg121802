@@ -110,7 +110,7 @@ Since most meta-analysis data is paired, Dankel's analysis focuses on primarily 
 
 ## Preliminary measures
 $$
-M_{change}=\text{Difference between means of Posttreatment group and baseline group in an independent design }
+M_{\text{change}}=M_{\text{post}}-M_{\text{bsl}}=\text{Difference between means}
 $$
 $$
 SD_{bsl}={\text{Standard Deviation of the baseline group in an independent design}}
@@ -144,7 +144,21 @@ We can calculate an Independent $t$ test statistic:
 
 $T_\text{indep}= \frac{M_{\text{change}}}{\sqrt{SD_{\text{pooled}}(\frac{1}{n_\text{bsl}}+\frac{1}{n_{\text{post}}})}}$
 
-Where $d$ represents Cohen's $d$. From this it is apparent how using the incorrect effect size can be detrimental to a given analysis when using a Paired Design.  
+# Calculations of the "Appropriate Effect Size" Measure
+- Dankel and his team believe that the appropriate effect size measure for this study is Cohen's $d_z$
+- I will outline the components and then the equation reported in the literature 
+
+$r =${sample correlation between baseline and post measures}
+
+$SD_\text{change}=\sqrt{SD_{\text{bsl}}^2+SD_{\text{post}}^2-2rSD_{\text{bsl}}SD_{\text{post}}}$
+
+Cohen's $d_{z}= \frac{M_\text{change}}{SD_{change}}$
+
+This also manifests in their calculation of a Paired $T$ statistic and as a resultingly the P-value: 
+
+$n^*=${number of subjects in the paired design}
+
+$T_{\text{paired}}=\frac{M_{\text{change}}}{\frac{SD_{\text{change}}}{\sqrt{n^*}}}$
 
 # Analysis and Procedure
 ## Figure 1
@@ -186,6 +200,7 @@ Graph A shows that each intervention has the same pre and post mean but differen
     \centering
     \includegraphics[width=0.75\textwidth]{figresult2.png}
 \end{figure}
+
 - Respective to the figures above
 - Top attempted to prove aim 1 
 - Bottom attempted to prove aim 2 
@@ -194,7 +209,7 @@ though effect sizes rarely range over 4.
 - Standard Deviation of the change scores is suspiciously low as well
 
 # My Results 
-Recalculate Cohen's dz and show if it changes the significance at all. 
+
 mention: $SD_\text{change}`=\sqrt{SD_{\text{pre}}^2+SD_{\text{post}}^2-2rSD_{pre}SD_{post}}$ this is the formula used in the article
 
 # Discussion
