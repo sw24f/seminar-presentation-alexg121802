@@ -28,8 +28,8 @@ header-includes:
 Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change score variability rather than the pre-test variability. J Strength Cond Res 35(6): 1773–1778, 2021—}
 
 
-# What is effect size 
-  - Variable that provides an overall measure for magnitude of change (@dankeleffect)
+# What is effect size ?
+  - Statistic that provides an overall measure for magnitude of change (@dankeleffect)
   - Differs from a T-statistic because sample size is not included
   - Quantifies how much the mean of the post-treatment differs from the mean of the baseline score
   in terms of a certain standard deviation.
@@ -38,10 +38,13 @@ Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change 
 
 # Authors' Aims
 
+## Aim 1
 - To convince the audience through analysis that baseline and post-test standard deviations (study sample measures of variability) don't tell the full story on the overall variability of the intervention. 
+
+## Aim 2
 - To convince the readers that the heterogeneity of the study sample can play a part in unintentionally influencing effect size measurements.
 
-How would one describe the two types of aforementioned variability?
+## How would one describe the two types of aforementioned variability?
 
 
 # Variability of the Study Sample
@@ -78,9 +81,9 @@ How would one describe the two types of aforementioned variability?
 
 The author's claim that the common effect size measures listed below are used exhaustively in meta-analyses in the exercise science discipline. 
 
-  - Cohen's d (Cite)
-  - Hedge's g (Cite)
-  - Glass delta (Cite)
+  - Cohen's d (@cohend)
+  - Hedge's g (@cohend)
+  - Glass delta (@glass-mcg)
   
   
   - Each use some combination of baseline standard deviation and post-treatment standard deviation.
@@ -140,7 +143,7 @@ $\text{Hedge's }g= C*\frac{M_\text{change}}{SD_\text{pooled}}$
 
 Where $C$ is a factor depending on $n$ multiplied to account for small sample sizes
 
-We can calculate an Independent $t$ test statistic: 
+We can calculate an Independent $T$ test statistic: 
 
 $T_\text{indep}= \frac{M_{\text{change}}}{\sqrt{SD_{\text{pooled}}(\frac{1}{n_\text{bsl}}+\frac{1}{n_{\text{post}}})}}$
 
@@ -154,7 +157,7 @@ $SD_\text{change}=\sqrt{SD_{\text{bsl}}^2+SD_{\text{post}}^2-2rSD_{\text{bsl}}SD
 
 Cohen's $d_{z}= \frac{M_\text{change}}{SD_{change}}$
 
-This also manifests in their calculation of a Paired $T$ statistic and as a resultingly the P-value: 
+This also manifests in their calculation of a Paired $T$ statistic and resultingly the P-value: 
 
 $n^*=${number of subjects in the paired design}
 
@@ -206,26 +209,38 @@ Graph A shows that each intervention has the same pre and post mean but differen
 - Bottom attempted to prove aim 2 
 - In both, 11.618 is mentioned as the "Appropriate effect size" even
 though effect sizes rarely range over 4. 
+- This produces an independent t-statistic of 36.74 and a p- value of $< 0.001$
 - Standard Deviation of the change scores is suspiciously low as well
 
 # My Results 
 
-mention: $SD_\text{change}`=\sqrt{SD_{\text{pre}}^2+SD_{\text{post}}^2-2rSD_{pre}SD_{post}}$ this is the formula used in the article
+- The literature displayed the same $SD_\text{change}$ equation as was used in
+the methods section above but did not use it. 
+- Calculated 11.618 as their "appropriate effect size" 
+- From the Literature: $M_\text{change}=3$, $SD_\text{pre}=6.05$, $SD_\text{post}=6.03$, 
+$r=0.99$, $n^*=10$. 
+- $SD_{\text{change}}=\sqrt{(6.05)^2+(6.03)^2-2(0.99)(6.05)(6.03)}\approx 0.8544 \neq 0.2582$
+- Cohen's $d_z= \frac{3}{0.8544}\approx3.52$
+- Paired $T$ statistic (formula) = $\frac{M_{\text{change}}}{\frac{SD_\text{change}}{\sqrt{n^*}}}$
+-  Paired $T$ statistic (applied) = $\frac{3}{\frac{.8544}{\sqrt{10}}}= \frac{3}{0.2702}=11.10$
+p-value $ < 0.001$
 
 # Discussion
-## General
-Impossible to quantify variability of actual intervention when using pre-post scores 
 
-Figure 1: Intervention 1 produces positive effect where intervention two does not 
+- Calculation error was due to reporting the standard error of the change scores as 
+the Standard Deviation of the change scores
 
-Common effect size measures are reliant on the heterogeneity of the study population 
+- Significance is the same with or without the error, although, it is important to note
+that the standard error and the standard deviation are not interchangeable by any means
 
-Figure 2 shows identical results in 2 diff groups with the only difference being that intervention 1 used a more heterogeneous population 
+- Impossible to quantify variability of actual intervention when using pre-post scores 
 
-## Other Issues/Notes
-Notes: normalizing using the preSD only is dependent on the subjects recruited rather than effectiveness 
+- Figure 1: Intervention 1 produces positive effect where intervention two does not 
 
-Also used in triangulation when trying to obtain sample size calculations  
+- Common effect size measures are reliant on the heterogeneity of the study population 
+
+- Figure 2 shows identical results in 2 diff groups with the only difference being that intervention 1 used a more heterogeneous population 
+
 
 
 # 
@@ -235,6 +250,7 @@ Also used in triangulation when trying to obtain sample size calculations
 \end{figure}
 [@anyquest]
 
-
 # References 
+
+
 

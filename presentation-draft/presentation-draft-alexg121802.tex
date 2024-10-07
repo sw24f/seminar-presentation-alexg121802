@@ -128,7 +128,7 @@ variability rather than the pre-test variability:\\
 \strut \\
 A Paper by Dr.~Scott Dankel and Dr.~Jeremy P. Loenneke}
 \author{Alex Gould}
-\date{2024-10-04}
+\date{2024-10-06}
 
 \begin{document}
 \frame{\titlepage}
@@ -140,12 +140,12 @@ change score variability rather than the pre-test variability. J
 Strength Cond Res 35(6): 1773--1778, 2021---\}
 \end{frame}
 
-\begin{frame}{What is effect size}
+\begin{frame}{What is effect size ?}
 \protect\hypertarget{what-is-effect-size}{}
 \begin{itemize}
 \tightlist
 \item
-  Variable that provides an overall measure for magnitude of change
+  Statistic that provides an overall measure for magnitude of change
   (Dankel and Loenneke (2021))
 \item
   Differs from a T-statistic because sample size is not included
@@ -164,18 +164,31 @@ Strength Cond Res 35(6): 1773--1778, 2021---\}
 
 \begin{frame}{Authors' Aims}
 \protect\hypertarget{authors-aims}{}
+\begin{block}{Aim 1}
+\protect\hypertarget{aim-1}{}
 \begin{itemize}
 \tightlist
 \item
   To convince the audience through analysis that baseline and post-test
   standard deviations (study sample measures of variability) don't tell
   the full story on the overall variability of the intervention.
+\end{itemize}
+\end{block}
+
+\begin{block}{Aim 2}
+\protect\hypertarget{aim-2}{}
+\begin{itemize}
+\tightlist
 \item
   To convince the readers that the heterogeneity of the study sample can
   play a part in unintentionally influencing effect size measurements.
 \end{itemize}
+\end{block}
 
-How would one describe the two types of aforementioned variability?
+\begin{block}{How would one describe the two types of aforementioned
+variability?}
+\protect\hypertarget{how-would-one-describe-the-two-types-of-aforementioned-variability}{}
+\end{block}
 \end{frame}
 
 \begin{frame}{Variability of the Study Sample}
@@ -252,11 +265,11 @@ used exhaustively in meta-analyses in the exercise science discipline.
 
 \begin{itemize}
 \item
-  Cohen's d (Cite)
+  Cohen's d (Cohen (1988))
 \item
-  Hedge's g (Cite)
+  Hedge's g (Cohen (1988))
 \item
-  Glass delta (Cite)
+  Glass delta (Glass (1981))
 \item
   Each use some combination of baseline standard deviation and
   post-treatment standard deviation.
@@ -350,7 +363,7 @@ n_{\text{bsl}}+n_{\text{post}}-2}}
 Where \(C\) is a factor depending on \(n\) multiplied to account for
 small sample sizes
 
-We can calculate an Independent \(t\) test statistic:
+We can calculate an Independent \(T\) test statistic:
 
 \(T_\text{indep}= \frac{M_{\text{change}}}{\sqrt{SD_{\text{pooled}}(\frac{1}{n_\text{bsl}}+\frac{1}{n_{\text{post}}})}}\)
 \end{frame}
@@ -374,7 +387,7 @@ We can calculate an Independent \(t\) test statistic:
 Cohen's \(d_{z}= \frac{M_\text{change}}{SD_{change}}\)
 
 This also manifests in their calculation of a Paired \(T\) statistic and
-as a resultingly the P-value:
+resultingly the P-value:
 
 \(n^*=\)\{number of subjects in the paired design\}
 
@@ -469,43 +482,63 @@ showing that the intervention variability is the same. Supports Aim 2.
   In both, 11.618 is mentioned as the ``Appropriate effect size'' even
   though effect sizes rarely range over 4.
 \item
+  This produces an independent t-statistic of 36.74 and a p- value of
+  \(< 0.001\)
+\item
   Standard Deviation of the change scores is suspiciously low as well
 \end{itemize}
 \end{frame}
 
 \begin{frame}{My Results}
 \protect\hypertarget{my-results}{}
-mention:
-\(SD_\text{change}`=\sqrt{SD_{\text{pre}}^2+SD_{\text{post}}^2-2rSD_{pre}SD_{post}}\)
-this is the formula used in the article
+\begin{itemize}
+\tightlist
+\item
+  The literature displayed the same \(SD_\text{change}\) equation as was
+  used in the methods section above but did not use it.
+\item
+  Calculated 11.618 as their ``appropriate effect size''
+\item
+  From the Literature: \(M_\text{change}=3\), \(SD_\text{pre}=6.05\),
+  \(SD_\text{post}=6.03\), \(r=0.99\), \(n^*=10\).
+\item
+  \(SD_{\text{change}}=\sqrt{(6.05)^2+(6.03)^2-2(0.99)(6.05)(6.03)}\approx 0.8544 \neq 0.2582\)
+\item
+  Cohen's \(d_z= \frac{3}{0.8544}\approx3.52\)
+\item
+  Paired \(T\) statistic (formula) =
+  \(\frac{M_{\text{change}}}{\frac{SD_\text{change}}{\sqrt{n^*}}}\)
+\item
+  Paired \(T\) statistic (applied) =
+  \(\frac{3}{\frac{.8544}{\sqrt{10}}}= \frac{3}{0.2702}=11.10\) p-value
+  \$ \textless{} 0.001\$
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Discussion}
 \protect\hypertarget{discussion}{}
-\begin{block}{General}
-\protect\hypertarget{general}{}
-Impossible to quantify variability of actual intervention when using
-pre-post scores
-
-Figure 1: Intervention 1 produces positive effect where intervention two
-does not
-
-Common effect size measures are reliant on the heterogeneity of the
-study population
-
-Figure 2 shows identical results in 2 diff groups with the only
-difference being that intervention 1 used a more heterogeneous
-population
-\end{block}
-
-\begin{block}{Other Issues/Notes}
-\protect\hypertarget{other-issuesnotes}{}
-Notes: normalizing using the preSD only is dependent on the subjects
-recruited rather than effectiveness
-
-Also used in triangulation when trying to obtain sample size
-calculations
-\end{block}
+\begin{itemize}
+\item
+  Calculation error was due to reporting the standard error of the
+  change scores as the Standard Deviation of the change scores
+\item
+  Significance is the same with or without the error, although, it is
+  important to note that the standard error and the standard deviation
+  are not interchangeable by any means
+\item
+  Impossible to quantify variability of actual intervention when using
+  pre-post scores
+\item
+  Figure 1: Intervention 1 produces positive effect where intervention
+  two does not
+\item
+  Common effect size measures are reliant on the heterogeneity of the
+  study population
+\item
+  Figure 2 shows identical results in 2 diff groups with the only
+  difference being that intervention 1 used a more heterogeneous
+  population
+\end{itemize}
 \end{frame}
 
 \begin{frame}{}
@@ -526,11 +559,18 @@ calculations
 {``Any Questions Image.''} n.d. Webpage.
 \url{https://mavink.com/explore/Images-for-Any-Questions}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-cohend}{}}%
+Cohen, Jacob. 1988. {``Statistical Power Analysis for the Behavioral
+Sciences.''} \emph{Academic Press}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-dankeleffect}{}}%
 Dankel, Scott J., and Jeremy P. Loenneke. 2021. {``EFFECT SIZES FOR
 PAIRED DATA SHOULD USE THE CHANGE SCORE VARIABILITY RATHER THAN THE PRE-
 TEST VARIABILITY.''} \emph{Journal of Strength and Conditioning
 Research} 6 (35): 1773--78.
+
+\leavevmode\vadjust pre{\hypertarget{ref-glass-mcg}{}}%
+Glass, Gene V. 1981. {``Meta Analysis in Social Research.''}
 
 \leavevmode\vadjust pre{\hypertarget{ref-dankelintro}{}}%
 Lab, Scott J. Dankel. 2024. {``About Dr. Dankel.''}
