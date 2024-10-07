@@ -54,8 +54,8 @@ Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change 
 
 
 # Variability of the Intervention
-- Any measure of difference between baseline and post-treatment measure
-- Represented in this case by the Standard Deviation of Change Scores (I will elaborate on this later)
+- Any measure of difference in variation between baseline and post-treatment measure
+- Represented in this case by the Standard Deviation of Change Scores, Cohen's $d_z$ (I will elaborate on these later)
 - Dankel and his team prefer this method of assessing variability 
 
 
@@ -77,7 +77,7 @@ Dankel, SJ and Loenneke, JP. Effect sizes for paired data should use the change 
 
 # Introduction
 
-## Specific Effect Size Measures
+## Common Effect Size Measures
 
 The author's claim that the common effect size measures listed below are used exhaustively in meta-analyses in the exercise science discipline. 
 
@@ -209,7 +209,7 @@ Graph A shows that each intervention has the same pre and post mean but differen
 - Bottom attempted to prove aim 2 
 - In both, 11.618 is mentioned as the "Appropriate effect size" even
 though effect sizes rarely range over 4. 
-- This produces an independent t-statistic of 36.74 and a p- value of $< 0.001$
+- This produces an paired t-statistic of 36.74 and a p- value of < 0.001
 - Standard Deviation of the change scores is suspiciously low as well
 
 # My Results 
@@ -223,16 +223,10 @@ $r=0.99$, $n^*=10$.
 - Cohen's $d_z= \frac{3}{0.8544}\approx3.52$
 - Paired $T$ statistic (formula) = $\frac{M_{\text{change}}}{\frac{SD_\text{change}}{\sqrt{n^*}}}$
 -  Paired $T$ statistic (applied) = $\frac{3}{\frac{.8544}{\sqrt{10}}}= \frac{3}{0.2702}=11.10$
-p-value $ < 0.001$
+p-value  < 0.001
 
 # Discussion
-
-- Calculation error was due to reporting the standard error of the change scores as 
-the Standard Deviation of the change scores
-
-- Significance is the same with or without the error, although, it is important to note
-that the standard error and the standard deviation are not interchangeable by any means
-
+## Author's Discoveries
 - Impossible to quantify variability of actual intervention when using pre-post scores 
 
 - Figure 1: Intervention 1 produces positive effect where intervention two does not 
@@ -240,6 +234,13 @@ that the standard error and the standard deviation are not interchangeable by an
 - Common effect size measures are reliant on the heterogeneity of the study population 
 
 - Figure 2 shows identical results in 2 diff groups with the only difference being that intervention 1 used a more heterogeneous population 
+
+## My Discoveries
+- Calculation error was due to reporting the standard error of the change scores as 
+the Standard Deviation of the change scores
+
+- Significance is the same with or without the error, although, it is important to note
+that the standard error and the standard deviation are not interchangeable by any means
 
 
 
